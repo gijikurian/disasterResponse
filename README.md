@@ -12,36 +12,55 @@ Table of Contents
 
 Introduction
 
-	This project is to analyze disaster data from Figure Eight to build a model for an API that classifies disaster messages. The data set contains real messages that were sent during disaster events. Project will be able to create a machine learning pipeline to categorize these events so that the messages can send to an appropriate disaster relief agency. Project will include a web app where an emergency worker can input a new message and get classification results in several categories. The web app will also display visualizations of the data. 
-	In ETL pipeline, we will read the dataset, clean the data, and then store it in a SQLite database. In ML pipeline we split the data into a training set and a test set.
+	This project is to analyze disaster data from Figure Eight to build a model for an API that classifies disaster messages. The
+	data set contains real messages that were sent during disaster events. Project will be able to create a machine learning
+	pipeline to categorize these events so that the messages can send to an appropriate disaster relief agency. Project will
+	include a web app where an emergency worker can input a new message and get classification results in several categories. The
+	web app will also display visualizations of the data. 
+	
+	In ETL pipeline, we will read the dataset, clean the data, and then store it in a SQLite database. In ML pipeline we split the
+	data into a training set and a test set.
   
 Installation
 
- 	There should be no necessary libraries to run the code here beyond the Anaconda distribution of Python. The code should run with no issues using Python versions 3 and above
+ 	There should be no necessary libraries to run the code here beyond the Anaconda distribution of Python. The code should run
+	with no issues using Python versions 3 and above
   
 Project Motivation
 
-  	This study is part of course that are owned by Udacity. This will be the future reference for those who looking for creating ETL pipeline and ML pipeline which uses GridSearchCV  with parameters.
+  	This study is part of course that are owned by Udacity. This will be the future reference for those who looking for creating
+	ETL pipeline and ML pipeline which uses GridSearchCV  with parameters.
  
 Folder structure
 
-- app
-| - template
-| |- master.html  # main page of web app
-| |- go.html  # classification result page of web app
-|- run.py  # Flask file that runs app
+	- app
 
-- data
-|- disaster_categories.csv  # data to process 
-|- disaster_messages.csv  # data to process
-|- process_data.py
-|- InsertDatabaseName.db   # database to save clean data to
+		| - template
 
-- models
-|- train_classifier.py
-|- classifier.pkl  # saved model 
+		| |- master.html  # main page of web app
 
-- README.md
+		| |- go.html  # classification result page of web app
+
+		|- run.py  # Flask file that runs app
+
+
+	- data
+
+		|- disaster_categories.csv  # data to process 
+		
+		|- disaster_messages.csv  # data to process
+
+		|- process_data.py
+
+		|- InsertDatabaseName.db   # database to save clean data to
+
+
+	- models
+
+		|- train_classifier.py
+
+		|- classifier.pkl  # saved model 
+	- README.md
 
 
 How to run
